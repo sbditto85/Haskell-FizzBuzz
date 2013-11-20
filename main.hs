@@ -1,5 +1,5 @@
 main = do
-	putStrLn $ unlines $ fizzbuzz $ take 100 [1..]
+	putStrLn $ unlines $ take 100 $ fizzbuzz [1..]
 	where fizzbuzz xl = foldr (\x acc -> (fizz x):acc ) [] xl
 		where fizz num 
 			| num `mod` 15 == 0 = "fizzbuzz"
