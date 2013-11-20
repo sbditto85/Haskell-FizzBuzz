@@ -6,4 +6,5 @@ fizzbuzz = [fizz x | x <- [1..]]
 		| num `mod` 5 == 0 = "buzz"
 		| otherwise = show num
 
+main :: IO ()
 main = putStrLn $ unlines $ take 100 fizzbuzz
